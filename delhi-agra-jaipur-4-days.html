@@ -1,0 +1,352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SJ Travels - An Online Indian Traveling Portal</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/menu.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cabin|Poiret+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<script src="prefixfree.min.js"></script>
+
+<link href="dist/css/datepicker.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,300,500&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+
+#topHolderInner{
+ width:100%;
+ background:url(images/banner-fits%20final.jpg) no-repeat;
+ background-size:contain;
+ background-attachment: fixed;
+}
+
+@media screen and ( max-width: 720px ) {
+
+#topHolderInner{
+ width: 100%;
+ background:url(images/banner-fits%20final.jpg) no-repeat 50%;
+ background-size: cover;
+ background-attachment: inherit;
+}
+
+}
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="dist/js/datepicker.js"></script>
+<script src="dist/js/i18n/datepicker.en.js"></script>
+
+<script>
+
+$(document).ready(function(){
+for (i = 1; i < 4; i++) {
+$('#con'+i).hide(); $('#con1').show();
+$('#tab1').css({ "background-color": "white", "color": "#15b0ea", "cursor": "default" });
+}
+});
+
+function mytab(ctab,num){
+
+ for (i = 1; i < 4; i++) {
+ $('#tab'+i).css({ "background-color": "#15b0ea", "color": "white", "cursor": "pointer" });
+ $('#con'+i).hide();
+ }
+ 
+ $('#'+ctab+num).css({ "background-color": "white", "color": "#15b0ea", "cursor": "default" });
+ $('#con'+num).show();
+ 
+ return false ;
+ 
+ }
+
+</script>
+
+<script>
+
+function pass(event){
+
+ var adult = $('#adult').val() ;
+ var kid   = $('#kid').val() ;
+
+ //alert(adult+' | '+kid);
+ 
+ if(!adult){ var adult = 0 ;}
+ if(!kid){ var adult = 0 ;}
+ 
+ $('#pass').text('Passenger : '+adult+' Adult & '+kid+' Kid');
+ 
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div id="topHolderInner">
+
+<div id="menuHolder">
+<div id="menuContainer">
+<div id="menuLeft"> <img src="images/logo.png" /> </div>
+<div id="menuRight">
+<header class="container">
+<nav class="nav">
+<button type="button" class="nav-trigger js-nav-trigger"><span></span><span></span><span></span></button>
+<ul class="nav-list">
+<li class="nav-item"> <a href="index.html"> <span class="fa fa-home"></span>     Home      </a> </li>
+<li class="nav-item"> <a href="about-us.html"> <span class="fa fa-book"></span>     About Us </a> </li>
+<li class="nav-item"> <a href="same-day-tours.html"> <span class="fa fa-bookmark"></span> Special Tours  </a> </li>
+<li class="nav-item"> <a href="golden-triangle-tours.html"> <span class="fa fa-bookmark"></span> Indian Theme Tours  </a> </li>
+<li class="nav-item"> <a href="contact-us.html"> <span class="fa fa-envelope"></span> Contact   </a> </li>
+</ul>
+</nav>
+<!-- end row --> 
+</header>
+</div>
+</div>
+</div>
+
+<div class="doClr"></div>
+
+<div id="topContainerInner"><div id="topContainerInnerScreen">
+<div class="pInnerHeadline">
+<h1>Delhi Agra Jaipur 4 Days</h1>
+<h2>Experience the Best Days</h2>
+</div>
+</div></div>
+
+<div class="doClr"></div>
+
+</div>
+
+<div id="centerHolder">
+
+<div id="centerHolderLeft">
+
+<ul id="chlul">
+<li id="tab1" onclick="mytab('tab',1)"> Overview </li>
+<li id="tab2" onclick="mytab('tab',2)"> Gallery  </li>
+<li id="tab3" onclick="mytab('tab',3)"> Reviews  </li>
+<div class="doClr"></div>
+</ul>
+
+<div class="tabcon" id="con1">
+
+<p><!--Nec magna primis labores ex, vim cu mazim vocent. Ius modus posse invenire ei, corpora detraxit pro an, malis dolores ut has. Nam ut elit ferri patrioque, zril partem principes cum id. Sea ne assum minim quaestio, at hinc saepe graeco qui. In nec ludus repudiare scribentur, vix agam fabellas ne. Sit dicta aliquid ornatus an, sea laoreet pericula ea. Invenire voluptatum in pro, vel enim latine ne, percipit convenire eu eam.--></p>
+
+<div id="specifications">
+
+<div class="speciBox">
+<div class="speciIcon"><i class="fa fa-check"></i> Specification 01 </div>
+<div class="speciText">Lorem ipsum dolor sit amet, ei per elitr persecuti adipiscing, ne discere temporibus nam.</div>
+</div>
+
+<div class="speciBox">
+<div class="speciIcon"><i class="fa fa-check"></i> Specification 02 </div>
+<div class="speciText">Lorem ipsum dolor sit amet, ei per elitr persecuti adipiscing, ne discere temporibus nam.</div>
+</div>
+
+<div class="speciBox">
+<div class="speciIcon"><i class="fa fa-check"></i> Specification 03 </div>
+<div class="speciText">Lorem ipsum dolor sit amet, ei per elitr persecuti adipiscing, ne discere temporibus nam.</div>
+</div>
+
+<div class="speciBox">
+<div class="speciIcon"><i class="fa fa-check"></i> Specification 04 </div>
+<div class="speciText">Lorem ipsum dolor sit amet, ei per elitr persecuti adipiscing, ne discere temporibus nam.</div>
+</div>
+
+<div class="doClr"></div>
+
+</div>
+
+<div class="speciDevider"></div>
+
+<div id="tourDetails">
+
+<h4> Program ( 4 Days ) </h4>
+
+<p><!--Iudico omnesque vis at, ius an laboramus adversarium. An eirmod doctus admodum est, vero numquam et mel, an duo modo error. No affert timeam mea, legimus ceteros his in. Aperiri honestatis sit at. Eos aeque fuisset ei, case denique eam ne. Augue invidunt has ad, ullum debitis mea ei, ne aliquip dignissim nec.--></p>
+
+</div>
+
+<div id="tmContainer">
+
+<ul class="cbp_tmtimeline">
+<li>
+<time class="cbp_tmtime" datetime="11:00"><span></span><span>Day 01 </span></time>
+<div class="cbp_tmicon">1</div>
+<div class="cbp_tmlabel">
+<!--<div class="hidden-xs"><img src="img/tour_plan_1.jpg" alt="" class="img-circle thumb_visit"></div>-->
+<h4> Arrival Delhi</h4>
+<p>Arrive Delhi, meet assist at the airport & transfer to hotel. Night stay in Delhi.</p>
+</div>
+</li>
+
+<li>
+<time class="cbp_tmtime" datetime="11: 15"><span></span><span>Day 02</span></time>
+<div class="cbp_tmicon">2</div>
+<div class="cbp_tmlabel">
+<!--<div class="hidden-xs"><img src="img/tour_plan_1.jpg" alt="" class="img-circle thumb_visit"></div>-->
+<h4> Delhi - Agra ( By road )</h4>
+<p>Breakfast in the hotel, after breakfast proceed for sightseeing tour of Old & New Delhi.
+
+ OLD DELHI - A sight-seeing tour of Old Delhi would entail visiting:- Red Fort - The red sandstone walls of Lal Qila, the Red Fort, extend for two km and vary in height from 18 metres on the river side to 33 metres on the city side. Shah Jahan started construction of the massive fort in 1638 and it was completed in 1648. Jama Masjid - Jama Masjid The splendid mosque built by Muhammad Ali Shah in the typical Mughal style with two minarets and three domes, lies to the west of the Hussainabad Imambara Raj Ghat - the memorial site where Mahatma Gandhi was cremated.
+
+ NEW DELHI - An extensive sight-seeing tour of New Delhi would include a visit:- Humayun's Tomb - Built in the mid 16th century by Haji Begum, senior wife of Humayun, the second Mughal emperor, Humayun's Tomb is an early example of Mughal architecture built in Delhi. Qutub Minar - 13 km to the south of Connaught Circus at Lalkote of 8th century Tomor Rajputs, the 72.5 m high Victory Pillar stands as a victory stand of a Muslim King Kutub-ud-din-Aibak in India. a drive along the ceremonial avenue - Rajpath, past the imposing India Gate, Parliament House, the President's Residence, Lotus Temple and would end with a drive through the Diplomatic Enclave. Evening drive to Agra & transfer to hotel. Night stay in Agra.</p>
+</div>
+</li>
+
+<li>
+<time class="cbp_tmtime" datetime="13:15"><span></span><span>Day 03</span></time>
+<div class="cbp_tmicon">3</div>
+<div class="cbp_tmlabel">
+<!--<div class="hidden-xs"><img src="img/tour_plan_1.jpg" alt="" class="img-circle thumb_visit"></div>-->
+<h4>Agra - Jaipur ( By road ))</h4>
+<p>Breakfast in the hotel, after breakfast sightseeing tour of Agra: TAJ MAHAL - A white marble Tomb building 1631 - 1648 in Agra, seat of the Mughal Empire by Shah Jahan for his wife, Arjuman Banu Begum, the monument sums up many of the formal themes that have played through Islamic architectu re. Its refined elegance is a conspicuous contrast both to the Hindu architecture of pre - Islamic India, with its thick walls, corbelled arches and heavy lintels and to the Indo Islamic styles, in which Hindu elements are combined with an electric assortment of motifs from Persian and Turkish sources. AGRA FORT- Fort built in red sandstone with its magnificent palaces, halls of public and private audience and the beautiful gardens. This is where Emperor Shah Jahan was kept under house arrest by his third son Aurangzeb and spent the last year of his life viewing the Taj Mahal from across the river Jamuna. Afternoon drive to Jaipur enroute visiting FATEHPUR SIKRI - the deserted red Sandstone City, Emperor Akbar built that as his capital and palace in the late 16th century is an exhilarating experience. It a veritable fairytale city and its "ruins" are in pristine condition ... it's not hard to imagine what the court life must have been like in the days of it's grandeur. Arrive Jaipur & transfer to hotel. Night stay in Jaipur.</p>
+</div>
+</li>
+
+<li>
+<time class="cbp_tmtime" datetime="13:15"><span></span><span>Day 04</span></time>
+<div class="cbp_tmicon">4</div>
+<div class="cbp_tmlabel">
+<!--<div class="hidden-xs"><img src="img/tour_plan_1.jpg" alt="" class="img-circle thumb_visit"></div>-->
+<h4>Delhi - Departure ( By road )</h4>
+<p>Breakfast in the hotel, after breakfast proceed for sightseeing to Amber Fort, City Palace, Jantar Mantar. The Amber Fort - set in picturesq ue and rugged hills is a fascinating blend of Mughal Architecture, construct by Raja Mann Singh in 1592 and completed by Swai Jai Singh, the fort is made in red sand stone and white marble. The rugged forbidding exterior belies an inner paradise with a beautiful of art and architecture. Amber Fort is the classic and romantic fort palace with a magnificent aura. The interior wall of palace depicts expressive painting scenes with carvings, precious stones and mirror settings. The City Palace located in the heart of the world city. The City Palace is a blend of Mughal and Rajasthani architecture and the royal family still lives in a part of the Palace. The building now forms the Maharaja Swai Man Singh II Museum and on display here are a wide array of royal costumes, some vary exquisite and precious pashmina (kashmiri) shawls, Benaras silk sarries sauganeri prints and folk embroidery afternoon drive to Delhi. Arrive Delhi & transfer to Airport for onward Flight.</p>
+</div>
+</li>
+
+                     
+</ul>
+
+</div>
+
+<div class="doClr"></div>
+
+</div>
+
+<div class="tabcon" id="con2"> </div>
+<div class="tabcon" id="con3"> </div>
+
+</div>
+
+
+<div id="centerHolderRight">
+
+<div id="bookYourTour" >
+<h1>Get Quotation of Tour</h1>
+<span> Back to You Immediately </span>
+</div>
+
+<form action="" method="" enctype="multipart/form-data">
+
+<div id="bookingBoxContainer">
+
+<span>Name and Lastname</span>
+<input type="text" class="booking-input" name="name_lastname_booking" placeholder="Name and Lastname" required>
+
+<span>From</span>
+<select class="booking-select" name="country_booking" required>
+
+</select>
+
+<span>Date of Arrival</span>
+<!--<input type="text" data-multiple-dates="1" data-multiple-dates-separator=", " data-position="bottom left" data-language="en" class="datepicker-here booking-input" placeholder="Arrival Date">-->
+<input type='text' name="date_booking" class="calender datepicker-here booking-input" data-position="bottom right" data-language="en" placeholder="Arrival Date" required>
+
+<span id="pass"> Passenger : 0 Adult & 0 Kid </span>
+
+<input onkeyup="pass(event)" onchange="pass(event)" id="adult" type="number" min="1" style="margin:0 4% 0 0;"  class="booking-select-half" name="adults_booking" placeholder="No. of Adults" required>
+<input onkeyup="pass(event)" onchange="pass(event)" id="kid" type="number" min="0" class="booking-select-half" name="kids_booking" placeholder="No. of Kids">
+
+<div class="doClr"></div>
+
+<span>Telephone</span>
+<input type="text" class="booking-input" name="telephone_booking" placeholder="Phone No. / Mobile No." required>
+
+<span>Email</span>
+<input type="text" class="booking-input" name="email_booking" placeholder="Email Address">
+
+<input class="booking-button" type="submit" value="Book Now" />
+
+<div class="fDevider">
+<input class="booking-button-b" type="button" value="or Contact us" />
+<span> <a href="tel://+91 9997086555" > <i class="fa fa-phone"></i> +91 8103312333 </a> </span>
+</div>
+
+</div>
+
+</form>
+
+</div>
+
+<div class="doClr"></div>
+
+</div>
+
+<div id="bottomHolder">
+
+<div id="bottomSubscriber">
+<div id="Subscriber">
+Subscribe us to join SJ Travels
+<input class="subscribeBar" name="" type="text" placeholder="Your Email Address" />
+<input class="subscribeBut" value="Go" type="button" />
+</div>
+</div>
+
+<div id="bottomMiddleHolder">
+<div id="bottomMiddle">
+<div id="bottoma">
+<img src="images/logo.png" /><br />
+Far far away, behind the word mountains, far from the countries we are committed to offering travel services of the highest quality, combining our energy and enthusiasm with years of experience.
+</div>
+<div id="bottomb">
+<span> Best Trip Plans with Tajmahal </span>
+<ul>
+<a href="sameday-taj-mahal-trip.html" > <li> <i class="fa fa-caret-right"></i> Same Day Taj Mahal Trip         </li> </a>
+<a href="delhi-agra-tour-via-car.html" > <li> <i class="fa fa-caret-right"></i> Delhi Agra Tour via Car        </li> </a>
+<a href="delhi-agra-jaipur-4-days.html" > <li> <i class="fa fa-caret-right"></i> Delhi Agra Jaipur 4 Days</li> </a>
+<a href="golden-triangle-tour-by-car.html" > <li> <i class="fa fa-caret-right"></i> Golden Triangle Trip By Car   </li> </a>
+<a href="rajasthan-royal-safari.html" > <li> <i class="fa fa-caret-right"></i> Rajasthan Royal Safari        </li> </a>
+<a href="royal-trip-of-rajasthan.html" > <li> <i class="fa fa-caret-right"></i> Royal Trip of Rajasthan        </li> </a>
+<a href="refreshing-backwaters-of-kerela.html" > <li> <i class="fa fa-caret-right"></i>Refreshing Backwaters of Kerala          </li> </a>
+<a href="exotic-beaches-of-kerela.html" > <li> <i class="fa fa-caret-right"></i> Exotic Beaches of Kerala             </li> </a>
+</ul>
+</div>
+<div id="bottomc">
+<span> Follow Tripballoon </span>
+<ul>
+<li> <i class="fa fa-envelope"></i> contact@sjtravels.com          </li>
+<li> <i class="fa fa-envelope"></i> sjtravels@gmail.com            </li>
+<li> <i class="fa fa-phone-square"></i> 8103312333  </li>
+<a href="#" > <li> <i class="fa fa-facebook-official"></i> facebook.com/sjtravels </li> </a>
+</ul>
+</div>
+<div class="doClr"></div>
+</div>
+</div>
+
+
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+<script>
+jQuery(function($){
+$('body').append($('<div class="mobile-nav"></div>').html($('.nav-list').clone()));
+$('.js-nav-trigger').on('click',function(event){
+event.preventDefault();
+$('body').toggleClass('show-nav');
+});       
+});
+</script>
+
+</body>
+</html>

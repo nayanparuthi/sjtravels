@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SJ Travels - An Online Indian Traveling Portal</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/menu.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cabin|Poiret+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<script src="prefixfree.min.js"></script>
+
+<link href="dist/css/datepicker.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,300,500&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+
+#topHolderInner{
+ width:100%;
+ background:url(images/golden%20triangle%20banner.jpg) no-repeat;
+ background-size:contain;
+ background-attachment: fixed;
+}
+
+@media screen and ( max-width: 720px ) {
+
+#topHolderInner{
+ width: 100%;
+ background:url(images/golden%20triangle%20banner.jpg) no-repeat 50%;
+ background-size: cover;
+ background-attachment: inherit;
+}
+
+}
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="dist/js/datepicker.js"></script>
+<script src="dist/js/i18n/datepicker.en.js"></script>
+
+<script>
+
+$(document).ready(function(){
+for (i = 1; i < 4; i++) {
+$('#con'+i).hide(); $('#con1').show();
+$('#tab1').css({ "background-color": "white", "color": "#15b0ea", "cursor": "default" });
+}
+});
+
+function mytab(ctab,num){
+
+ for (i = 1; i < 4; i++) {
+ $('#tab'+i).css({ "background-color": "#15b0ea", "color": "white", "cursor": "pointer" });
+ $('#con'+i).hide();
+ }
+ 
+ $('#'+ctab+num).css({ "background-color": "white", "color": "#15b0ea", "cursor": "default" });
+ $('#con'+num).show();
+ 
+ return false ;
+ 
+ }
+
+</script>
+
+<script>
+
+function pass(event){
+
+ var adult = $('#adult').val() ;
+ var kid   = $('#kid').val() ;
+
+ //alert(adult+' | '+kid);
+ 
+ if(!adult){ var adult = 0 ;}
+ if(!kid){ var adult = 0 ;}
+ 
+ $('#pass').text('Passenger : '+adult+' Adult & '+kid+' Kid');
+ 
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div id="topHolderInner">
+
+<div id="menuHolder">
+<div id="menuContainer">
+<div id="menuLeft"> <img src="images/logo.png" /> </div>
+<div id="menuRight">
+<header class="container">
+<nav class="nav">
+<button type="button" class="nav-trigger js-nav-trigger"><span></span><span></span><span></span></button>
+<ul class="nav-list">
+<li class="nav-item"> <a href="index.html"> <span class="fa fa-home"></span>     Home      </a> </li>
+<li class="nav-item"> <a href="about-us.html"> <span class="fa fa-book"></span>     About Us </a> </li>
+<li class="nav-item"> <a href="same-day-tours.html"> <span class="fa fa-bookmark"></span> Special Tours  </a> </li>
+<li class="nav-item"> <a href="golden-triangle-tours.html"> <span class="fa fa-bookmark"></span> Indian Theme Tours  </a> </li>
+<li class="nav-item"> <a href="contact-us.html"> <span class="fa fa-envelope"></span> Contact   </a> </li>
+</ul>
+</nav>
+<!-- end row --> 
+</header>
+</div>
+</div>
+</div>
+
+<div class="doClr"></div>
+
+<div id="topContainerInner"><div id="topContainerInnerScreen">
+<div class="pInnerHeadline">
+
+</div>
+</div></div>
+
+<div class="doClr"></div>
+
+</div>
+
+<div id="centerHolder">
+
+<div class="pHeadline">
+<h1>Golden Traingle Tours</h1>
+<h2>Explore Golden Traingle Tours with a new vision</h2>
+</div><div class="thumbsHolder">
+
+<div class="thumb" style="background:url(images/golden-triangle-safari.jpg) no-repeat">
+<div class="thumbNew"> Price : Rs. 10,999 </div>
+<div class="thumbScreen">
+<div class="thumbUpper"></div>
+<div class="thumbDown">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr> <td colspan="2" align="left" valign="middle"> <h3>  Golden Triangle Tour with Safari</h3> </td> </tr>
+<tr> <td align="left" valign="middle"> 7 Nights/8 Days  </td> 
+<td align="right" valign="middle"> <a class="thumbButtonOne" href="golden-triangle-tour-with-safari.html"> View All </a> </td> 
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+<div class="thumb" style="background:url(images/golden-triangle-with-udaipur.jpg) no-repeat">
+<div class="thumbNew"> Price : Rs. 10,999 </div>
+<div class="thumbScreen">
+<div class="thumbUpper"></div>
+<div class="thumbDown">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr> <td colspan="2" align="left" valign="middle"> <h3>Golden Triangle with Udaipur</h3> </td> </tr>
+<tr> <td align="left" valign="middle"> 7 Nights/8 Days </td> 
+<td align="right" valign="middle"> <a class="thumbButtonOne" href="golden-triangle-with-udaipur.html"> View All </a> </td> 
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+ <div class="thumb" style="background:url(images/red%20fort%20banner.jpg)" no-repeat">
+<div class="thumbNew"> Price : Rs. 10,999 </div>
+<div class="thumbScreen">
+<div class="thumbUpper"></div>
+<div class="thumbDown">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr> <td colspan="2" align="left" valign="middle"> <h3> Golden Triangle Tour By Car  </h3> </td> </tr>
+<tr> <td align="left" valign="middle"> 3 Nights/4 Days</td> 
+<td align="right" valign="middle"> <a class="thumbButtonOne" href="golden-triangle-tour-by-car.html"> View All </a> </td> 
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+<div class="thumb" style="background:url(images/royal-trip-of-rajasthan.jpg) no-repeat">
+<div class="thumbNew"> Price : Rs. 10,999 </div>
+<div class="thumbScreen">
+<div class="thumbUpper"></div>
+<div class="thumbDown">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr> <td colspan="2" align="left" valign="middle"> <h3> Delhi Agra Jaipur 4 Days </h3> </td> </tr>
+<tr> <td align="left" valign="middle">  3 Nights/4 Days</td> 
+<td align="right" valign="middle"> <a class="thumbButtonOne" href="delhi-agra-jaipur-4-days.html"> View All </a> </td> 
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+
+
+<div class="doClr"></div>
+
+</div>
+
+
+
+<div class="doClr"></div>
+</div>
+
+<div id="bottomHolder">
+
+<div id="bottomSubscriber">
+<div id="Subscriber">
+Subscribe us to join SJ Travels
+<input class="subscribeBar" name="" type="text" placeholder="Your Email Address" />
+<input class="subscribeBut" value="Go" type="button" />
+</div>
+</div>
+
+<div id="bottomMiddleHolder">
+<div id="bottomMiddle">
+<div id="bottoma">
+<img src="images/logo.png" /><br />
+Far far away, behind the word mountains, far from the countries we are committed to offering travel services of the highest quality, combining our energy and enthusiasm with years of experience.
+</div>
+<div id="bottomb">
+<span> Best Trip Plans with Tajmahal </span>
+<ul>
+<a href="sameday-taj-mahal-trip.html" > <li> <i class="fa fa-caret-right"></i> Same Day Taj Mahal Trip         </li> </a>
+<a href="delhi-agra-tour-via-car.html" > <li> <i class="fa fa-caret-right"></i> Delhi Agra Tour via Car        </li> </a>
+<a href="delhi-agra-jaipur-4-days.html" > <li> <i class="fa fa-caret-right"></i> Delhi Agra Jaipur 4 Days</li> </a>
+<a href="golden-triangle-tour-by-car.html" > <li> <i class="fa fa-caret-right"></i> Golden Triangle Trip By Car   </li> </a>
+<a href="rajasthan-royal-safari.html" > <li> <i class="fa fa-caret-right"></i> Rajasthan Royal Safari        </li> </a>
+<a href="royal-trip-of-rajasthan.html" > <li> <i class="fa fa-caret-right"></i> Royal Trip of Rajasthan        </li> </a>
+<a href="refreshing-backwaters-of-kerela.html" > <li> <i class="fa fa-caret-right"></i>Refreshing Backwaters of Kerala          </li> </a>
+<a href="exotic-beaches-of-kerela.html" > <li> <i class="fa fa-caret-right"></i> Exotic Beaches of Kerala             </li> </a>
+</ul>
+</div>
+<div id="bottomc">
+<span> Follow sjtravels </span>
+<ul>
+<li> <i class="fa fa-envelope"></i> contact@sjtravels.com          </li>
+<li> <i class="fa fa-envelope"></i> sjtravels@gmail.com            </li>
+<li> <i class="fa fa-phone-square"></i> 8103312333  </li>
+<a href="#" > <li> <i class="fa fa-facebook-official"></i> facebook.com/sjtravels </li> </a>
+</ul>
+</div>
+<div class="doClr"></div>
+</div>
+</div>
+
+
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+<script>
+jQuery(function($){
+$('body').append($('<div class="mobile-nav"></div>').html($('.nav-list').clone()));
+$('.js-nav-trigger').on('click',function(event){
+event.preventDefault();
+$('body').toggleClass('show-nav');
+});       
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SJ Travels - An Online Indian Traveling Portal</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/menu.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cabin|Poiret+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<script src="prefixfree.min.js"></script>
+
+<link href="dist/css/datepicker.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,300,500&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+
+#topHolderInner{
+ width:100%;
+ background:url(images/royal%20safari%20amer.jpg) no-repeat;
+ background-size:contain;
+ background-attachment: fixed;
+}
+
+@media screen and ( max-width: 720px ) {
+
+#topHolderInner{
+ width: 100%;
+ background:url(images/royal%20safari%20amer.jpg) no-repeat 50%;
+ background-size: cover;
+ background-attachment: inherit;
+}
+
+}
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="dist/js/datepicker.js"></script>
+<script src="dist/js/i18n/datepicker.en.js"></script>
+
+<script>
+
+$(document).ready(function(){
+for (i = 1; i < 4; i++) {
+$('#con'+i).hide(); $('#con1').show();
+$('#tab1').css({ "background-color": "white", "color": "#15b0ea", "cursor": "default" });
+}
+});
+
+function mytab(ctab,num){
+
+ for (i = 1; i < 4; i++) {
+ $('#tab'+i).css({ "background-color": "#15b0ea", "color": "white", "cursor": "pointer" });
+ $('#con'+i).hide();
+ }
+ 
+ $('#'+ctab+num).css({ "background-color": "white", "color": "#15b0ea", "cursor": "default" });
+ $('#con'+num).show();
+ 
+ return false ;
+ 
+ }
+
+</script>
+
+<script>
+
+function pass(event){
+
+ var adult = $('#adult').val() ;
+ var kid   = $('#kid').val() ;
+
+ //alert(adult+' | '+kid);
+ 
+ if(!adult){ var adult = 0 ;}
+ if(!kid){ var adult = 0 ;}
+ 
+ $('#pass').text('Passenger : '+adult+' Adult & '+kid+' Kid');
+ 
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div id="topHolderInner">
+
+<div id="menuHolder">
+<div id="menuContainer">
+<div id="menuLeft"> <img src="images/logo.png" /> </div>
+<div id="menuRight">
+<header class="container">
+<nav class="nav">
+<button type="button" class="nav-trigger js-nav-trigger"><span></span><span></span><span></span></button>
+<ul class="nav-list">
+<li class="nav-item"> <a href="index.html"> <span class="fa fa-home"></span>     Home      </a> </li>
+<li class="nav-item"> <a href="about-us.html"> <span class="fa fa-book"></span>     About Us </a> </li>
+<li class="nav-item"> <a href="same-day-tours.html"> <span class="fa fa-bookmark"></span> Special Tours  </a> </li>
+<li class="nav-item"> <a href="golden-triangle-tours.html"> <span class="fa fa-bookmark"></span> Indian Theme Tours  </a> </li>
+<li class="nav-item"> <a href="contact-us.html"> <span class="fa fa-envelope"></span> Contact   </a> </li>
+</ul>
+</nav>
+<!-- end row --> 
+</header>
+</div>
+</div>
+</div>
+
+<div class="doClr"></div>
+
+<div id="topContainerInner"><div id="topContainerInnerScreen">
+<div class="pInnerHeadline">
+<h1>Rajasthan Royal Safari</h1>
+<h2>Explore the Royal Culture of Rajasthan.</h2>
+</div>
+</div></div>
+
+<div class="doClr"></div>
+
+</div>
+
+<div id="centerHolder">
+
+<div id="centerHolderLeft">
+
+<ul id="chlul">
+<li id="tab1" onclick="mytab('tab',1)"> Overview </li>
+<li id="tab2" onclick="mytab('tab',2)"> Gallery  </li>
+<li id="tab3" onclick="mytab('tab',3)"> Reviews  </li>
+<div class="doClr"></div>
+</ul>
+
+<div class="tabcon" id="con1">
+
+<p><!--Nec magna primis labores ex, vim cu mazim vocent. Ius modus posse invenire ei, corpora detraxit pro an, malis dolores ut has. Nam ut elit ferri patrioque, zril partem principes cum id. Sea ne assum minim quaestio, at hinc saepe graeco qui. In nec ludus repudiare scribentur, vix agam fabellas ne. Sit dicta aliquid ornatus an, sea laoreet pericula ea. Invenire voluptatum in pro, vel enim latine ne, percipit convenire eu eam.--></p>
+
+<div id="specifications">
+
+<div class="speciBox">
+<div class="speciIcon"><i class="fa fa-check"></i> Specification 01 </div>
+<div class="speciText">Lorem ipsum dolor sit amet, ei per elitr persecuti adipiscing, ne discere temporibus nam.</div>
+</div>
+
+<div class="speciBox">
+<div class="speciIcon"><i class="fa fa-check"></i> Specification 02 </div>
+<div class="speciText">Lorem ipsum dolor sit amet, ei per elitr persecuti adipiscing, ne discere temporibus nam.</div>
+</div>
+
+<div class="speciBox">
+<div class="speciIcon"><i class="fa fa-check"></i> Specification 03 </div>
+<div class="speciText">Lorem ipsum dolor sit amet, ei per elitr persecuti adipiscing, ne discere temporibus nam.</div>
+</div>
+
+<div class="speciBox">
+<div class="speciIcon"><i class="fa fa-check"></i> Specification 04 </div>
+<div class="speciText">Lorem ipsum dolor sit amet, ei per elitr persecuti adipiscing, ne discere temporibus nam.</div>
+</div>
+
+<div class="doClr"></div>
+
+</div>
+
+<div class="speciDevider"></div>
+
+<div id="tourDetails">
+
+<h4> Program ( 10 Days ) </h4>
+
+<p><!--Iudico omnesque vis at, ius an laboramus adversarium. An eirmod doctus admodum est, vero numquam et mel, an duo modo error. No affert timeam mea, legimus ceteros his in. Aperiri honestatis sit at. Eos aeque fuisset ei, case denique eam ne. Augue invidunt has ad, ullum debitis mea ei, ne aliquip dignissim nec.--></p>
+
+</div>
+
+<div id="tmContainer">
+
+<ul class="cbp_tmtimeline">
+
+<li>
+<time class="cbp_tmtime" datetime="09:30"><span></span><span>Day 01</span></time>
+<div class="cbp_tmicon">1</div>
+<div class="cbp_tmlabel">
+<!--<div class="hidden-xs"><img src="img/tour_plan_1.jpg" alt="" class="img-circle thumb_visit"></div>-->
+<h4>Arrive Delhi</h4>
+<p>rrive at Indra Gandhi International Airport, New Delhi. Upon Arrival you are welcomed and assisted by the local representative after that transfer to the hotel and your rest of day is free for leisure and overnight at the hotel.</p>
+</div>
+</li>
+
+<li>
+<time class="cbp_tmtime" datetime="09:30"><span></span><span>Day 02</span></time>
+<div class="cbp_tmicon">2</div>
+<div class="cbp_tmlabel">
+<!--<div class="hidden-xs"><img src="img/tour_plan_1.jpg" alt="" class="img-circle thumb_visit"></div>-->
+<h4>Delhi</h4>
+<p>Breakfast at the hotel and we start our full day tour with Old Delhi, First of all we visit Red fort after that we visit Jama Masjid and we take a rikshaw ride as well. After that we visit India gate, Raj ghat etc. In the evening we visit Kutub minar and later we come back to the hotel and overnight at the hotel.</p>
+</div>
+</li>
+
+<li>
+<time class="cbp_tmtime" datetime="09:30"><span></span><span>Day 03</span></time>
+<div class="cbp_tmicon">3</div>
+<div class="cbp_tmlabel">
+<!--<div class="hidden-xs"><img src="img/tour_plan_1.jpg" alt="" class="img-circle thumb_visit"></div>-->
+<h4>Augue invidunt has</h4>
+<p>reakfast at the hotel and today we drive to Agra and enroute we visit Sikandara and we continue our drive to Agra and check in at the hotel and later we see the most beautiful building in the world. The Taj Mahal and after we that we visit Agra fort and we come back to the hotel and Overnight at the Hotel.</p>
+</div>
+</li>
+
+<li>
+<time class="cbp_tmtime" datetime="09:30"><span></span><span>Day 04</span></time>
+<div class="cbp_tmicon">4</div>
+<div class="cbp_tmlabel">
+<!--<div class="hidden-xs"><img src="img/tour_plan_1.jpg" alt="" class="img-circle thumb_visit"></div>-->
+<h4>Agra – Jaipur (233 Km / 5hrs)</h4>
+<p>Breakfast at the hotel and today we drive to Jaipur and enroute we visit Fatehpur – Sikri (Once capital of King Akbar) after that we continue our journey to Pink City, Jaipur. Upon arrival we check in at the hotel and our day is free for leisure and overnight at the hotel.
+</p>
+</div>
+</li>
+
+<li>
+<time class="cbp_tmtime" datetime="09:30"><span></span><span>Day 05</span></time>
+<div class="cbp_tmicon">5</div>
+<div class="cbp_tmlabel">
+<!--<div class="hidden-xs"><img src="img/tour_plan_1.jpg" alt="" class="img-circle thumb_visit"></div>-->
+<h4>Jaipur</h4>
+<p>Breakfast at the hotel and today we visit Jaipur. We start with Amber fort there we reach amber fort by Elephant ride and after seeing Amber fort weVisit to City Palace & Museum and later on we visit Hawa Mahal. (Palace of winds). In the evening we come back to the hotel and overnight at the hotel.</p>
+</div>
+</li>
+
+<li>
+<time class="cbp_tmtime" datetime="09:30"><span></span><span>Day 06</span></time>
+<div class="cbp_tmicon">6</div>
+<div class="cbp_tmlabel">
+<!--<div class="hidden-xs"><img src="img/tour_plan_1.jpg" alt="" class="img-circle thumb_visit"></div>-->
+<h4>Jaipur – Pushkar</h4>
+<p>Breakfast at the hotel and later we drive to Pushkar and Check in at the hotel and today we visit Brahma Temple and Pushkar lake, Overnight at the hotel.</p>
+</div>
+</li>
+
+<li>
+<time class="cbp_tmtime" datetime="09:30"><span></span><span>Day 07</span></time>
+<div class="cbp_tmicon">7</div>
+<div class="cbp_tmlabel">
+<!--<div class="hidden-xs"><img src="img/tour_plan_1.jpg" alt="" class="img-circle thumb_visit"></div>-->
+<h4> Pushkar – Udaipur</h4>
+<p>Breakfast at the hotel and today we drive to Udaipur, Check in at the hotel and our rest of day is free for leisure and overnight at the hotel.</p>
+</div>
+</li>
+
+<li>
+<time class="cbp_tmtime" datetime="09:30"><span></span><span>Day 08</span></time>
+<div class="cbp_tmicon">8</div>
+<div class="cbp_tmlabel">
+<!--<div class="hidden-xs"><img src="img/tour_plan_1.jpg" alt="" class="img-circle thumb_visit"></div>-->
+<h4>Udaipur</h4>
+<p>Breakfast at the hotel and today we visit some famous places in Udaipur Such as City Palace & Museum, Jag Mandir , Jagdish Temple , Sheliyon ki bari & in the afternoon we do boat ride at Lake pichola & later we come back to the hotel and Overnight at the hotel.</p>
+</div>
+</li>
+
+
+<li>
+<time class="cbp_tmtime" datetime="09:30"><span></span><span>Day 09</span></time>
+<div class="cbp_tmicon">9</div>
+<div class="cbp_tmlabel">
+<!--<div class="hidden-xs"><img src="img/tour_plan_1.jpg" alt="" class="img-circle thumb_visit"></div>-->
+<h4> Udaipur - New Delhi</h4>
+<p>Breakfast at the hotel and later timely departure to Airport to take flight to New Delhi. Upon Arrival in New Delhi and we are transferred to the hotel and check in at the hotel .Full day free for leisure and Overnight at the hotel></p>
+</div>
+</li>
+
+
+<li>
+<time class="cbp_tmtime" datetime="09:30"><span></span><span>Day 10</span></time>
+<div class="cbp_tmicon">10</div>
+<div class="cbp_tmlabel">
+<!--<div class="hidden-xs"><img src="img/tour_plan_1.jpg" alt="" class="img-circle thumb_visit"></div>-->
+<h4> New Delhi – Departure</h4>
+<p>Breakfast in the morning and timely departure to Indira Gandhi International Airport to take home bound flight.</p>
+</div>
+</li>
+                     
+</ul>
+
+</div>
+
+<div class="doClr"></div>
+
+</div>
+
+<div class="tabcon" id="con2"> </div>
+<div class="tabcon" id="con3"> </div>
+
+</div>
+
+
+<div id="centerHolderRight">
+
+<div id="bookYourTour" >
+<h1>Get Quotation of Tour</h1>
+<span> Back to You Immediately </span>
+</div>
+
+<form action="" method="" enctype="multipart/form-data">
+
+<div id="bookingBoxContainer">
+
+<span>Name and Lastname</span>
+<input type="text" class="booking-input" name="name_lastname_booking" placeholder="Name and Lastname" required>
+
+<span>From</span>
+<select class="booking-select" name="country_booking" required>
+
+</select>
+
+<span>Date of Arrival</span>
+<!--<input type="text" data-multiple-dates="1" data-multiple-dates-separator=", " data-position="bottom left" data-language="en" class="datepicker-here booking-input" placeholder="Arrival Date">-->
+<input type='text' name="date_booking" class="calender datepicker-here booking-input" data-position="bottom right" data-language="en" placeholder="Arrival Date" required>
+
+<span id="pass"> Passenger : 0 Adult & 0 Kid </span>
+
+<input onkeyup="pass(event)" onchange="pass(event)" id="adult" type="number" min="1" style="margin:0 4% 0 0;"  class="booking-select-half" name="adults_booking" placeholder="No. of Adults" required>
+<input onkeyup="pass(event)" onchange="pass(event)" id="kid" type="number" min="0" class="booking-select-half" name="kids_booking" placeholder="No. of Kids">
+
+<div class="doClr"></div>
+
+<span>Telephone</span>
+<input type="text" class="booking-input" name="telephone_booking" placeholder="Phone No. / Mobile No." required>
+
+<span>Email</span>
+<input type="text" class="booking-input" name="email_booking" placeholder="Email Address">
+
+<input class="booking-button" type="submit" value="Book Now" />
+
+<div class="fDevider">
+<input class="booking-button-b" type="button" value="or Contact us" />
+<span> <a href="tel://+91 9997086555" > <i class="fa fa-phone"></i> +91 9997086555 </a> </span>
+</div>
+
+</div>
+
+</form>
+
+</div>
+
+<div class="doClr"></div>
+
+</div>
+
+<div id="bottomHolder">
+
+<div id="bottomSubscriber">
+<div id="Subscriber">
+Subscribe us to join SJ Travels
+<input class="subscribeBar" name="" type="text" placeholder="Your Email Address" />
+<input class="subscribeBut" value="Go" type="button" />
+</div>
+</div>
+
+<div id="bottomMiddleHolder">
+<div id="bottomMiddle">
+<div id="bottoma">
+<img src="images/logo.png" /><br />
+Far far away, behind the word mountains, far from the countries we are committed to offering travel services of the highest quality, combining our energy and enthusiasm with years of experience.
+</div>
+<div id="bottomb">
+<span> Best Trip Plans with Tajmahal </span>
+<ul>
+<a href="sameday-taj-mahal-trip.html" > <li> <i class="fa fa-caret-right"></i> Same Day Taj Mahal Trip         </li> </a>
+<a href="delhi-agra-tour-via-car.html" > <li> <i class="fa fa-caret-right"></i> Delhi Agra Tour via Car        </li> </a>
+<a href="delhi-agra-jaipur-4-days.html" > <li> <i class="fa fa-caret-right"></i> Delhi Agra Jaipur 4 Days</li> </a>
+<a href="golden-triangle-tour-by-car.html" > <li> <i class="fa fa-caret-right"></i> Golden Triangle Trip By Car   </li> </a>
+<a href="rajasthan-royal-safari.html" > <li> <i class="fa fa-caret-right"></i> Rajasthan Royal Safari        </li> </a>
+<a href="royal-trip-of-rajasthan.html" > <li> <i class="fa fa-caret-right"></i> Royal Trip of Rajasthan        </li> </a>
+<a href="refreshing-backwaters-of-kerela.html" > <li> <i class="fa fa-caret-right"></i>Refreshing Backwaters of Kerala          </li> </a>
+<a href="exotic-beaches-of-kerela.html" > <li> <i class="fa fa-caret-right"></i> Exotic Beaches of Kerala             </li> </a>
+</ul>
+</div>
+<div id="bottomc">
+<span> Follow SJTravels </span>
+<ul>
+<li> <i class="fa fa-envelope"></i> contact@sjtravels.com          </li>
+<li> <i class="fa fa-envelope"></i> sjtravels@gmail.com            </li>
+<li> <i class="fa fa-phone-square"></i> 8103312333  </li>
+<a href="#" > <li> <i class="fa fa-facebook-official"></i> facebook.com/sjtravels </li> </a>
+</ul>
+</div>
+<div class="doClr"></div>
+</div>
+</div>
+
+
+
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+<script>
+jQuery(function($){
+$('body').append($('<div class="mobile-nav"></div>').html($('.nav-list').clone()));
+$('.js-nav-trigger').on('click',function(event){
+event.preventDefault();
+$('body').toggleClass('show-nav');
+});       
+});
+</script>
+
+</body>
+</html>
